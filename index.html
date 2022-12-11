@@ -74,16 +74,13 @@
 <!--      <p class="logo">Wanna YOLO !?</p>-->
 <!--    </div>-->
     <div class="side-nav-bar" class="w3-display-topleft w3-container w3-xlarge">
-      <button id="btn-menu" class="w3-button w3-black"
-              onclick="document.getElementById('menu').style.display='block'">
+      <button id="btn-menu" class="w3-button w3-black" onclick="onMenu()">
         menu
       </button>
-      <button id="btn-contact" class="w3-button w3-black"
-              onclick="document.getElementById('contact').style.display='block'">
+      <button id="btn-contact" class="w3-button w3-black" onclick="onContact()">
         contact
       </button>
-      <button id="btn-shopping" onclick="onYolo()"
-              class="w3-button w3-black">
+      <button id="btn-shopping" class="w3-button w3-black" onclick="onYolo()">
         Yolo it - Shopping
       </button>
     </div>
@@ -92,23 +89,11 @@
     </div>
   </div>
 
-  <div id="modal-yolo" class="w3-modal">
+  <!-- Modals -->
+  <div id="modal-menu" class="w3-modal">
     <div class="w3-modal-content w3-animate-zoom">
       <div class="w3-container w3-black w3-display-container">
-        <span onclick="document.getElementById('nice-yolo').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-        <h1>Nice Yolo</h1>
-      </div>
-      <div class="w3-container">
-        <h1>人生如果不去YOLO,和咸鱼还有什么区别？</h1>
-        <h1 style="margin-left: 50%"> - 鲁迅, 1920年6月9日</h1>
-      </div>
-    </div>
-  </div>
-
-  <div id="model-menu" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-      <div class="w3-container w3-black w3-display-container">
-        <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <span onclick="document.getElementById('modal-menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
         <h1>Starters</h1>
       </div>
       <div class="w3-container">
@@ -128,11 +113,10 @@
       </div>
     </div>
   </div>
-
   <div id="modal-contact" class="w3-modal">
     <div class="w3-modal-content w3-animate-zoom">
       <div class="w3-container w3-black">
-        <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <span onclick="document.getElementById('modal-contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
         <h1>Contact</h1>
       </div>
       <div class="w3-container">
@@ -147,5 +131,17 @@
       </div>
     </div>
   </div>
+  <div id="modal-yolo" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('modal-yolo').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Nice Yolo</h1>
+      </div>
+      <div class="w3-container">
+        <h1>Feel GOOD!</h1>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
