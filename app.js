@@ -4,6 +4,10 @@ function onYolo() {
     document.getElementById('modal-yolo').style.display='block'
 }
 
+function onInitCheckout() {
+    alert('init checkout!!!!')
+}
+
 function onContact() {
     console.log('on Contact')
     document.getElementById('modal-contact').style.display='block'
