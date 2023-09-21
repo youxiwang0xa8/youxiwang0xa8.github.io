@@ -1,6 +1,6 @@
 function onYolo() {
     console.log('on Yolo')
-    dataLayer.push({'event': 'yolo_shopping', "eventModel.currency": "USD"}) // to trigger Tag-yolo_shopping
+    dataLayer.push({'event': 'yolo_shopping', "eventModel":{"currency": "USD"}}) // to trigger Tag-yolo_shopping
     document.getElementById('modal-yolo').style.display='block'
 }
 
